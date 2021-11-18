@@ -25,7 +25,7 @@ export const SecretFriendsList = () => {
           <li key={k} className="list-group-item">
             {k}
 
-            <div class="alert alert-info float-end p-1 w-50" role="alert">
+            <div className="alert alert-info float-end p-1 w-50" role="alert">
               {v}
             </div>
           </li>

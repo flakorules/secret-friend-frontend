@@ -6,7 +6,6 @@ import { FriendsListElement } from "./FriendsListElement";
 export const FriendsList = () => {
   const { friendsList } = useSelector((state) => state.secretFriends);
   const dispatch = useDispatch();
-console.log(friendsList.length);
   const onHandleGetSecretFriendsClick = () => {
     dispatch(startSetSecretFriends());
   };

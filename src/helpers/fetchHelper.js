@@ -11,8 +11,7 @@ export const fetchSecretFriendsService = async (friendsList) => {
     redirect: "follow",
   };
 
-  const response = await fetch("http://localhost:3001", requestOptions);
-
+  const response = await fetch(process.env.REACT_APP_API_URL, requestOptions);
   const data = await response.json();
 
   return data;
